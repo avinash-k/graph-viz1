@@ -1,0 +1,5 @@
+To run 
+Go to project folder and run the command :
+
+python -m SimpleHTTPServer 8080
+

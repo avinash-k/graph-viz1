@@ -2,6 +2,9 @@ function selectableForceDirectedGraph() {
     var width = 200,
     height = 200,
     shiftKey, ctrlKey;
+    var div = d3.select("body").append("div")	
+    .attr("class", "tooltip")				
+    .style("opacity", 0);
 
     var nodeGraph = null;
     var xScale = d3.scale.linear()
@@ -254,6 +257,7 @@ function selectableForceDirectedGraph() {
                 .each(function(d) { d.fixed |= 2; })
             }
 
+           
             function dragged(d) {
                 node.filter(function(d) { return d.selected; })
                 .each(function(d) { 
@@ -270,6 +274,8 @@ function selectableForceDirectedGraph() {
             .attr("r", 4)
             .attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; })
+            .attr("title",function(d){return d.name})
+            .attr("data-name",function(d){ return d.name})
             .on("dblclick", function(d) { d3.event.stopPropagation(); })
             .on("click", function(d) {
                 if (d3.event.defaultPrevented) return;
@@ -277,15 +283,38 @@ function selectableForceDirectedGraph() {
                 if (!shiftKey) {
                     //if the shift key isn't down, unselect everything
                     node.classed("selected", function(p) { return p.selected =  p.previouslySelected = false; })
-                    showProperties(d,!shiftKey);
                 }
-                
+                window.nameArray.push(d.name);
+                var selector = "";
+                nameArray.forEach(function(){
+
+                });
+                var similarNodes = $('svg').find('[data-name="' + d.name + '"]');
+                for(var i = 0 ; i < similarNodes.length;i++){
+                    $(similarNodes[i]).addClass("selected");
+                }
                 // always select this node
                 d3.select(this).classed("selected", d.selected = !d.previouslySelected);
+                
+                showProperties(d,!shiftKey);
+
             })
 
             .on("mouseup", function(d) {
                 //if (d.selected && shiftKey) d3.select(this).classed("selected", d.selected = false);
+            })
+            .on("mouseover",function(d){
+                div.transition()		
+                    .duration(200)		
+                    .style("opacity", .9);		
+                div.html(d.name)	
+                    .style("left", (d3.event.pageX) + "px")		
+                    .style("top", (d3.event.pageY - 28) + "px");
+            })
+            .on("mouseout",function(){		
+                div.transition()		
+                    .duration(500)		
+                    .style("opacity", 0);	
             })
             .call(d3.behavior.drag()
                   .on("dragstart", dragstarted)
@@ -305,21 +334,31 @@ function selectableForceDirectedGraph() {
 
                   force.on("tick", tick);
 
+                  window.nodeCallback();
+
         });
 
         function showProperties(d,singleNodeSelected) {
             console.log("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH")
             console.log(node);
             //$("#right-panel").text(JSON.stringify(d));
+            console.log(singleNodeSelected);
             if(singleNodeSelected){
                  $('#properties .prop').remove();
             }
-            Object.entries(d).forEach(function(entry){
-                $('#properties').append('<tr class="prop">' 
-                + '<td>' + entry[0] + '</td>'
-                + '<td>' + entry[1] + '</td>'
-                + '</tr>');
-            });
+            $('#properties .heading').after('<tr class="prop">'
+            + '<td>id</td>' 
+            + '<td>' + d.id + '</td>'
+            + '</tr><tr class="prop">'
+            + '<td>name</td>'
+            + '<td>' + d.name + '</td>'
+            + '</tr>' + '<br/>');
+            // Object.entries(d).forEach(function(entry){
+            //     $('#properties').append('<tr class="prop">' 
+            //     + '<td>' + entry[0] + '</td>'
+            //     + '<td>' + entry[1] + '</td>'
+            //     + '</tr>');
+            // });
             
         }
 

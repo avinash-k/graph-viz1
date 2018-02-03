@@ -30,6 +30,20 @@
     border: 1px solid #aaa;
 }
 
+.graph-container {
+  display:table-cell;
+  padding-right: 20px;
+}
+
+.node-properties-container {
+  display: table-cell;
+  padding-left: 20px;
+}
+
+#right-panel {
+  width: 25%;
+}
+
 </style>
 <body>
     <p>
@@ -37,7 +51,15 @@
     <input type="number" value="4" id="graphCount" min="1" max="100" step="1"/>
     <button type="button" id="gobtn">Go</button>
     </p>
-    <div class="graph-container"></div>
+    <div><div class="graph-container"></div>
+    <div id="right-panel" class="node-properties-container">
+      <table id="properties">
+        <tr class="heading">
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+      </table>
+    </div></div>
     <!-- <div class='cell' align='center' id="d3_selectable_force_directed_graph"></div>
     <div class='cell' align='center' id="d3_selectable_force_directed_graph_1"></div>
     <div class='cell' align='center' id="d3_selectable_force_directed_graph_2"></div> -->

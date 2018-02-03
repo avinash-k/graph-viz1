@@ -11,21 +11,49 @@ function selectableForceDirectedGraph() {
 
     //clear existing svg 
     $('svg').remove();
-    //iterate on d3.selectAll('.cell')[0].length
-    for (i = 1; i <= window.graphCount; i++) {
-        var id = 'cell_' + i;
-        var inputJson = "graph.json";
-        console.log(id);
-        if($("#" + id).length == 0 ){
-            if(i % 4 != 0)
-                $('.graph-container').append('<div class="cell" id="cell_'+i+'"></div>');
-            else
-                $('.graph-container').append('<div class="cell" id="cell_'+i+'"></div>'+'<br/>');    
-        }
-        //var id = d3.selectAll('.cell')[0][i].id;
+    
+    var pointsJson = "graph.json";
+    var fileList = [];
+    d3.text('ccToEventsExcelSheet.tsv',function(data){
+        //console.log(data)
+        //fileList = data.split("\n");
+        data.split("\n").forEach(function(d){
+            if(d.length!=0)
+                fileList.push(d.trim());
+        });
+        console.log("FileList : " + fileList.length);
+        //console.log(fileList[0]);
+
         
-        processViz(id,inputJson);
-    }
+        d3.json(pointsJson, function(error,graph) {
+            console.log(graph[0]);
+            // graph.links.forEach(function(d) {
+            //     d.source = graph.nodes[d.source];
+            //     d.target = graph.nodes[d.target];
+            // });
+            window.points = graph.nodes;
+            console.log("Number of points : " + points.length);
+
+            //iterate on d3.selectAll('.cell')[0].length
+            for (i = 1; i <= window.graphCount; i++) {
+                var id = 'cell_' + i;
+                //var inputJson = "graph.json";
+                var inputJson = "json/" + fileList[i-1];
+                console.log(id);
+                if($("#" + id).length == 0 ){
+                    if(i % 4 != 0)
+                        $('.graph-container').append('<div class="cell" id="cell_'+i+'"></div>');
+                    else
+                        $('.graph-container').append('<div class="cell" id="cell_'+i+'"></div>'+'<br/>');    
+                }
+                //var id = d3.selectAll('.cell')[0][i].id;
+                
+                processViz(id,inputJson);
+            }
+        });
+
+        
+    });
 
     function processViz(id,inputJson){
         var svg = d3.select("#"+id)
@@ -184,7 +212,14 @@ function selectableForceDirectedGraph() {
         }
 
         d3.json(inputJson, function(error, graph) {
+            console.log(inputJson);
             nodeGraph = graph;
+            graph.nodes.forEach(function(n,i){
+                console.log(i);
+                console.log(n);
+                n['x']=window.points[i].x;
+                n['y']=window.points[i].y;
+            });
 
             graph.links.forEach(function(d) {
                 d.source = graph.nodes[d.source];
@@ -242,8 +277,9 @@ function selectableForceDirectedGraph() {
                 if (!shiftKey) {
                     //if the shift key isn't down, unselect everything
                     node.classed("selected", function(p) { return p.selected =  p.previouslySelected = false; })
+                    showProperties(d,!shiftKey);
                 }
-
+                
                 // always select this node
                 d3.select(this).classed("selected", d.selected = !d.previouslySelected);
             })
@@ -271,6 +307,21 @@ function selectableForceDirectedGraph() {
 
         });
 
+        function showProperties(d,singleNodeSelected) {
+            console.log("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH")
+            console.log(node);
+            //$("#right-panel").text(JSON.stringify(d));
+            if(singleNodeSelected){
+                 $('#properties .prop').remove();
+            }
+            Object.entries(d).forEach(function(entry){
+                $('#properties').append('<tr class="prop">' 
+                + '<td>' + entry[0] + '</td>'
+                + '<td>' + entry[1] + '</td>'
+                + '</tr>');
+            });
+            
+        }
 
         function keydown() {
             shiftKey = d3.event.shiftKey || d3.event.metaKey;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<head><title>Sort based Visualization</title></head>
+<head><title>Dataset Visualization</title></head>
 <style>
 
 .node {
@@ -23,8 +23,8 @@
 }
 
 .cell {
-	width: 200px;
-    height: 200px;
+	width: 300px;
+    height: 500px;
     overflow: hidden;
     display: table-cell;
     padding: 20px;
@@ -32,20 +32,38 @@
 }
 .main-container {
   display: table;
+  width: 100%;
 }
 .graph-container {
   display:table-cell;
   padding-right: 20px;
+  width: 54%;
 }
 
 .node-properties-container {
   display: table-cell;
   position: absolute;
   top: 52px;
+  display: none;
 }
 
+#left-panel {
+  display: table-cell;
+  width: 24%;
+  vertical-align: middle;
+  overflow: auto;
+}
 #right-panel {
-  width: 25%;
+  display: table-cell;
+  width: 24%;
+  vertical-align: middle;
+  overflow: auto;
+}
+
+.content {
+    /* width: 68%; */
+    width: 300px;
+    height: 500px;
 }
 
 table#properties {
@@ -76,78 +94,62 @@ div.tooltip {
 <body>
     <p>
     <label>Number of Graphs: </label>
-    <input type="number" value="4" id="graphCount" min="1" max="100" step="1"/>
+    <input type="number" value="2" id="graphCount" min="1" max="100" step="1"/>
     <input type="text" id="nodeName" placeholder="Entity Name"/>
-    <label>Select Initial File: </label>
-    <select id="fileDropDown" name="inputFile">
-    </select>
+     <label>Select File 1: </label>
+    <select id="fileDropDown1" name="inputFile1"><option></option></select>
+     <label>Select File 2: </label>
+    <select id="fileDropDown2" name="inputFile2"><option></option></select>
     <button type="button" id="gobtn">Go</button>
     </p>
     <div class="main-container">
-      <div class="graph-container"></div>
-      <div id="right-panel" class="node-properties-container">
-        <table id="properties">
-          <tr class="heading">
-            <th>Property</th>
-            <th>Value</th>
-          </tr>
-        </table>
+      <div id="left-panel">
+       <div class="content">
+
+       </div>
       </div>
+      <div class="graph-container"></div>
+      <div id="right-panel">
+        <div class="content">
+
+       </div>
+      </div>
+    </div>
+    <div class="node-properties-container">
+      <table id="properties">
+        <tr class="heading">
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+      </table>
     </div>
     <!-- <div class='cell' align='center' id="d3_selectable_force_directed_graph"></div>
     <div class='cell' align='center' id="d3_selectable_force_directed_graph_1"></div>
     <div class='cell' align='center' id="d3_selectable_force_directed_graph_2"></div> -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="plot-sort.js"></script>
+<script src="plot4panel.js"></script>
 <script type="text/javascript">
 	//add click event listener, for go button
-    window.graphCount = 4;
+    window.graphCount = 2;
     window.nodeCallback = function(){
       var similarNodes = $('svg').find('[data-name="' + window.nodeName + '"]');
       for(var i = 0 ; i < similarNodes.length;i++){
           $(similarNodes[i]).addClass("selected");
       }
     };
-    window.nameArrayCallback = function(){
-      for(var i = 0; i < window.nameArray.length ; i++){
-        var similarNodes = $('svg').find('[data-name="' + window.nameArray[i] + '"]');
-        for(var j = 0 ; j < similarNodes.length;j++){
-            $(similarNodes[j]).addClass("selected");
-        }
-      }
-    };
     window.nameArray = [];
-    window.fileListMap = {};
-    //total files entities map
-    d3.text('entities_files.uniq',function(data){
-        data.split("\n").forEach(function(d){
-          if(d.length!=0){
-              filename_entity = d.trim().split(':');
-              if(filename_entity[1] in window.fileListMap){
-                window.fileListMap[filename_entity[1]].push(filename_entity[0]);
-              }else{
-                window.fileListMap[filename_entity[1]] = [];
-                window.fileListMap[filename_entity[1]].push(filename_entity[0]);
-              }
-              
-              console.log(filename_entity);
-              }
-
-      });
-    });
-    
     document.getElementById("gobtn").addEventListener("click", function() {
 
         var graphCount = document.getElementById("graphCount").value;
         var nodeName = document.getElementById("nodeName").value;
-        var selectedFileName = document.getElementById("fileDropDown").value;
+        var selectedFileName1 = document.getElementById("fileDropDown1").value;
+        var selectedFileName2 = document.getElementById("fileDropDown2").value;
         //alert( graphCount );
         window.graphCount = graphCount;
         window.nodeName = nodeName;
-        window.selectedFileName = selectedFileName;
-        window.fromNodeClick = false;
-        $('.cell').remove();
+        window.selectedFileName1 = selectedFileName1;
+        window.selectedFileName2 = selectedFileName2;
         selectableForceDirectedGraph();
     }, false);
 </script>

@@ -1,0 +1,857 @@
+ID006_clinic_016:adenocarcinoma
+ID006_clinic_016:cea
+ID006_clinic_016:colonoscopy
+ID006_clinic_016:colonoscopy_m
+ID006_clinic_016:ct of the abdomen and pelvis
+ID006_clinic_016:diagnosis
+ID006_clinic_016:eus
+ID006_clinic_016:grade 3/4
+ID006_clinic_016:htn
+ID006_clinic_016:lesion
+ID006_clinic_016:mri of the pelvis
+ID006_clinic_016:rectal cancer
+ID006_clinic_016:surgical evaluation
+ID007_clinic_019:anesthesia
+ID007_clinic_019:biopsies
+ID007_clinic_019:carcinoma
+ID007_clinic_019:cbc
+ID007_clinic_019:cea
+ID007_clinic_019:chest x-ray
+ID007_clinic_019:colon cancers
+ID007_clinic_019:colon mass
+ID007_clinic_019:colonoscopy
+ID007_clinic_019:colonoscopy_m
+ID007_clinic_019:ct
+ID007_clinic_019:ecg
+ID007_clinic_019:endoscopic treatment
+ID007_clinic_019:family history of uterine cancer
+ID007_clinic_019:flexible sigmoidoscopy
+ID007_clinic_019:immunohistochemistry staining
+ID007_clinic_019:laboratory studies
+ID007_clinic_019:liver ultrasound
+ID007_clinic_019:malignant
+ID007_clinic_019:medical evaluation
+ID007_clinic_019:mri
+ID007_clinic_019:pet scan
+ID007_clinic_019:renal insufficiency
+ID007_clinic_019:resection
+ID007_clinic_019:resection_m
+ID007_clinic_019:surgery_m
+ID007_clinic_019:treatment
+ID007_clinic_019:treatment_m
+ID014_clinic_040:anemia
+ID014_clinic_040:anemia_m
+ID014_clinic_040:colonoscopy
+ID014_clinic_040:colonoscopy_m
+ID014_clinic_040:colorectal cancer
+ID014_clinic_040:colorectal primary
+ID014_clinic_040:colorectal surgery
+ID014_clinic_040:colorectal surgery_m
+ID014_clinic_040:d&c
+ID014_clinic_040:disease
+ID014_clinic_040:distal sigmoid
+ID014_clinic_040:endometrial cancer
+ID014_clinic_040:enlarged uterus
+ID014_clinic_040:hysteroscopy
+ID014_clinic_040:poor nutritional status
+ID014_clinic_040:primary endometrial
+ID014_clinic_040:sigmoidoscopy
+ID014_clinic_040:thickened endometrium
+ID014_clinic_040:vaginal bleeding
+ID015_clinic_043:anastomotic leak
+ID015_clinic_043:blood clots
+ID015_clinic_043:blood transfusion
+ID015_clinic_043:cardiac events
+ID015_clinic_043:colon cancer
+ID015_clinic_043:difficulty in placing the catheter
+ID015_clinic_043:disease
+ID015_clinic_043:emergency surgery
+ID015_clinic_043:ileostomy
+ID015_clinic_043:infections
+ID015_clinic_043:needing blood
+ID015_clinic_043:pneumonia
+ID015_clinic_043:resuscitation
+ID015_clinic_043:right colectomy
+ID015_clinic_043:right hemicolectomy
+ID015_clinic_043:stress incontinence
+ID015_clinic_043:surgery
+ID015_clinic_043:surgery_m
+ID015_clinic_043:treatment
+ID015_clinic_043:treatment_m
+ID015_clinic_043:urinary catheter
+ID015_clinic_043:urinary tract infections
+ID022_clinic_066:5-fu
+ID022_clinic_066:adjuvant chemotherapy
+ID022_clinic_066:chemotherapy
+ID022_clinic_066:chemotherapy_m
+ID022_clinic_066:cold sensitivity
+ID022_clinic_066:cytopenias
+ID022_clinic_066:fatigue
+ID022_clinic_066:folfox
+ID022_clinic_066:illness
+ID022_clinic_066:leucovorin
+ID022_clinic_066:malignancy
+ID022_clinic_066:nausea
+ID022_clinic_066:neuropathy
+ID022_clinic_066:oxaliplatin
+ID022_clinic_066:oxaliplatin_m
+ID022_clinic_066:pulmonary infiltrates
+ID022_clinic_066:regimen
+ID022_clinic_066:resection
+ID022_clinic_066:resection_m
+ID022_clinic_066:stage iii colon cancer
+ID022_clinic_066:therapy
+ID023_clinic_067:abdominal surgeries
+ID023_clinic_067:chf
+ID023_clinic_067:colon cancer
+ID023_clinic_067:exploration
+ID023_clinic_067:protruberant abdomen
+ID023_clinic_067:renal dysfunction
+ID023_clinic_067:right hemicolectomy
+ID023_clinic_067:stabilization
+ID023_clinic_067:surgical
+ID023_clinic_067:tumor
+ID030_clinic_090:5-fu
+ID030_clinic_090:adjuvant chemotherapy
+ID030_clinic_090:chemotherapy
+ID030_clinic_090:chemotherapy_m
+ID030_clinic_090:folfox
+ID030_clinic_090:infusion
+ID030_clinic_090:recurrent disease
+ID030_clinic_090:regimen
+ID030_clinic_090:stage iiia colon cancer
+ID030_clinic_090:surgery_m
+ID031_clinic_091:cad
+ID031_clinic_091:colon adenocarcinoma
+ID031_clinic_091:cpt
+ID031_clinic_091:hyperlipidemia
+ID031_clinic_091:laparoscopic right hemicolectomy
+ID038_clinic_112:adenopathy
+ID038_clinic_112:cholecystectomy
+ID038_clinic_112:ct-scan
+ID038_clinic_112:disease
+ID038_clinic_112:hepatectomy
+ID038_clinic_112:hepatic metastases
+ID038_clinic_112:laboratory studies
+ID038_clinic_112:metastases
+ID038_clinic_112:peritoneal metastases
+ID038_clinic_112:primary tumor
+ID038_clinic_112:rectal cancer
+ID038_clinic_112:resection
+ID038_clinic_112:resection_m
+ID046_clinic_133:cholecystectomy
+ID046_clinic_133:resection
+ID046_clinic_133:resection_m
+ID047_clinic_138:5-fu
+ID047_clinic_138:adenocarcinoma of the colon
+ID047_clinic_138:adjuvant therapy
+ID047_clinic_138:adjuvant therapy_m
+ID047_clinic_138:cancer
+ID047_clinic_138:chemotherapy
+ID047_clinic_138:chemotherapy_m
+ID047_clinic_138:folfox
+ID047_clinic_138:glimepiride
+ID047_clinic_138:hand-foot syndrome
+ID047_clinic_138:hypoglycemic
+ID047_clinic_138:infusion
+ID047_clinic_138:mouth sores
+ID047_clinic_138:nausea
+ID047_clinic_138:oxaliplatin_m
+ID047_clinic_138:regimen
+ID047_clinic_138:sensory neuropathy
+ID047_clinic_138:stage iii colon cancer
+ID047_clinic_138:type-2 diabetes
+ID047_clinic_138:vomiting
+ID047_clinic_138:vomiting_m
+ID054_clinic_158:accelerated hypertension
+ID054_clinic_158:antihypertensives
+ID054_clinic_158:blood pressure
+ID054_clinic_158:blood pressure monitoring
+ID054_clinic_158:cea
+ID054_clinic_158:chemotherapy
+ID054_clinic_158:chemotherapy_m
+ID054_clinic_158:chest x-ray
+ID054_clinic_158:colonoscopies
+ID054_clinic_158:colonoscopy
+ID054_clinic_158:colonoscopy_m
+ID054_clinic_158:congestive heart failure
+ID054_clinic_158:coronary artery disease
+ID054_clinic_158:ct colonography
+ID054_clinic_158:ct-scan
+ID054_clinic_158:ct-scan of the abdomen
+ID054_clinic_158:ct-scan with contrast
+ID054_clinic_158:ekg
+ID054_clinic_158:enema
+ID054_clinic_158:eus
+ID054_clinic_158:functional status
+ID054_clinic_158:glaucoma
+ID054_clinic_158:hypercholesterolemia
+ID054_clinic_158:hypertension
+ID054_clinic_158:incontinence problems
+ID054_clinic_158:lower-extremity edema
+ID054_clinic_158:manometry
+ID054_clinic_158:medrol
+ID054_clinic_158:murmur
+ID054_clinic_158:neoadjuvant therapy
+ID054_clinic_158:neoadjuvant therapy_m
+ID054_clinic_158:obesity
+ID054_clinic_158:obesity_m
+ID054_clinic_158:pelvic mri
+ID054_clinic_158:polyps
+ID054_clinic_158:premedicate
+ID054_clinic_158:proctoscopy
+ID054_clinic_158:radiation
+ID054_clinic_158:reaction
+ID054_clinic_158:recheck
+ID054_clinic_158:rectal cancer
+ID054_clinic_158:rectal ultrasound
+ID054_clinic_158:stress echocardiogram
+ID054_clinic_158:test results
+ID054_clinic_158:valves
+ID055_clinic_161:aaa repair
+ID055_clinic_161:adenocarcinoma
+ID055_clinic_161:anemia
+ID055_clinic_161:anemia_m
+ID055_clinic_161:biopsies
+ID055_clinic_161:cancer
+ID055_clinic_161:cea
+ID055_clinic_161:chest x-ray
+ID055_clinic_161:colon mass
+ID055_clinic_161:colorectal surgery
+ID055_clinic_161:colorectal surgery_m
+ID055_clinic_161:ct-scan of the abdomen and pelvis
+ID055_clinic_161:history of smoking
+ID055_clinic_161:hypertension
+ID055_clinic_161:metastasis
+ID055_clinic_161:nodules
+ID055_clinic_161:obesity
+ID055_clinic_161:obesity_m
+ID055_clinic_161:obstructive sleep apnea
+ID055_clinic_161:oral hypoglycemics
+ID055_clinic_161:paroxysmal a-fib
+ID055_clinic_161:polyp
+ID055_clinic_161:polyp_m
+ID055_clinic_161:prognosis
+ID055_clinic_161:pulmonary nodules
+ID055_clinic_161:regional spread
+ID055_clinic_161:stress tests
+ID055_clinic_161:type-2 diabetes
+ID062_clinic_182:biopsies
+ID062_clinic_182:blood work
+ID062_clinic_182:cecal carcinoma
+ID062_clinic_182:chest x-ray
+ID062_clinic_182:colonoscopy
+ID062_clinic_182:colonoscopy_m
+ID062_clinic_182:ct abdomen and pelvis
+ID062_clinic_182:dobutamine stress echo
+ID062_clinic_182:ecg
+ID062_clinic_182:gout
+ID062_clinic_182:hypertension
+ID062_clinic_182:injections
+ID062_clinic_182:morbid obesity
+ID062_clinic_182:prednisone
+ID063_clinic_185:abnormal bleeding
+ID063_clinic_185:adenocarcinoma of the colon
+ID063_clinic_185:anesthesia
+ID063_clinic_185:anesthesia evaluation
+ID063_clinic_185:bladder neoplasms
+ID063_clinic_185:bleeding disorders
+ID063_clinic_185:cbc
+ID063_clinic_185:cea
+ID063_clinic_185:chemotherapy
+ID063_clinic_185:chemotherapy_m
+ID063_clinic_185:chest x-ray
+ID063_clinic_185:colorectal surgery
+ID063_clinic_185:colorectal surgery_m
+ID063_clinic_185:ct abdomen and pelvis
+ID063_clinic_185:diagnosis
+ID063_clinic_185:ekg
+ID063_clinic_185:ekg results
+ID063_clinic_185:electrolytes
+ID063_clinic_185:family history of colon cancer
+ID063_clinic_185:hysterectomy
+ID063_clinic_185:infiltrating
+ID063_clinic_185:lfts
+ID063_clinic_185:lynch syndrome
+ID063_clinic_185:lynch syndrome abnormalities
+ID063_clinic_185:lynch syndrome_m
+ID063_clinic_185:personal history
+ID063_clinic_185:pet scan
+ID063_clinic_185:prolonged bleeding
+ID063_clinic_185:radiation
+ID063_clinic_185:surgery
+ID063_clinic_185:surgery_m
+ID063_clinic_185:surgical intervention
+ID063_clinic_185:urine cytology
+ID063_clinic_185:uterine cancer
+ID070_clinic_206:anesthesia
+ID070_clinic_206:blood work
+ID070_clinic_206:chest x-ray
+ID070_clinic_206:colon and rectal surgery consultation
+ID070_clinic_206:ct abdomen and pelvis
+ID070_clinic_206:ecg
+ID070_clinic_206:fna
+ID070_clinic_206:ihc
+ID070_clinic_206:immunohistochemical staining
+ID070_clinic_206:lesion
+ID070_clinic_206:medications
+ID070_clinic_206:radiation oncology
+ID070_clinic_206:rectal cancer
+ID070_clinic_206:rectal ultrasound
+ID070_clinic_206:tattoo
+ID071_clinic_209:brooke ileostomy
+ID071_clinic_209:cecal carcinoma
+ID071_clinic_209:cecal mass
+ID071_clinic_209:colonoscopy
+ID071_clinic_209:colonoscopy_m
+ID071_clinic_209:exploratory laparotomy
+ID071_clinic_209:functional repercussions
+ID071_clinic_209:ovarian carcinoma
+ID071_clinic_209:radiation therapy_m
+ID071_clinic_209:rectal exam
+ID071_clinic_209:resection
+ID071_clinic_209:resection_m
+ID071_clinic_209:right colectomy
+ID071_clinic_209:temporary ileostomy
+ID071_clinic_209:transverse colostomy
+ID071_clinic_209:tumor
+ID071_clinic_209:ureteral stents
+ID078_clinic_230:ct-scan
+ID078_clinic_230:explore the abdomen
+ID078_clinic_230:metastasis
+ID078_clinic_230:metastatic locations
+ID078_clinic_230:metastatic sites
+ID078_clinic_230:resect
+ID086_clinic_254:abdominal perineal resection
+ID086_clinic_254:alk-phos
+ID086_clinic_254:ast
+ID086_clinic_254:calcified right hilar lymph node
+ID086_clinic_254:cea
+ID086_clinic_254:colostomy
+ID086_clinic_254:colostomy_m
+ID086_clinic_254:creatinine
+ID086_clinic_254:cxr
+ID086_clinic_254:ecg
+ID086_clinic_254:hemoglobin
+ID086_clinic_254:intraoperative radiation therapy
+ID086_clinic_254:labs
+ID086_clinic_254:liver resection
+ID086_clinic_254:metastatic rectal cancer
+ID086_clinic_254:normal ecg
+ID086_clinic_254:normal sinus rhythm
+ID086_clinic_254:para-aortic lymph node dissection
+ID086_clinic_254:platelets
+ID086_clinic_254:port-a-cath
+ID086_clinic_254:potassium
+ID086_clinic_254:pulmonary metastases
+ID086_clinic_254:ruq clips
+ID086_clinic_254:sodium
+ID086_clinic_254:ureteral stents
+ID086_clinic_254:ventricular rate
+ID086_clinic_254:wbc's
+ID087_clinic_257:adenocarcinoma
+ID087_clinic_257:adenomatous polyps
+ID087_clinic_257:asymptomatic
+ID087_clinic_257:atrial fibrillation
+ID087_clinic_257:chronic prostatitis
+ID087_clinic_257:hyperglycemia
+ID087_clinic_257:hyperlipidemia
+ID087_clinic_257:liver masses
+ID087_clinic_257:metastases
+ID087_clinic_257:partial bowel obstruction
+ID087_clinic_257:sotalol
+ID087_clinic_257:treatment_m
+ID087_clinic_257:valvular regurgitation
+ID087_clinic_257:weight-loss
+ID094_clinic_277:5-fu
+ID094_clinic_277:avastin
+ID094_clinic_277:cetuximab_m
+ID094_clinic_277:chemotherapy
+ID094_clinic_277:chemotherapy_m
+ID094_clinic_277:ct-scan
+ID094_clinic_277:ct-scan of the chest
+ID094_clinic_277:diagnosis
+ID094_clinic_277:disease
+ID094_clinic_277:erbitux
+ID094_clinic_277:folfiri
+ID094_clinic_277:folfox
+ID094_clinic_277:folfox chemotherapy
+ID094_clinic_277:kras wild-type
+ID094_clinic_277:liver metastases
+ID094_clinic_277:metastases
+ID094_clinic_277:metastatic colon cancer
+ID094_clinic_277:metastatic rectal cancer
+ID094_clinic_277:mild increase in size and number of some of the hepatic metastases
+ID094_clinic_277:neoadjuvant chemoradiation
+ID094_clinic_277:primary tumor
+ID094_clinic_277:progression of disease
+ID094_clinic_277:re-imaging
+ID094_clinic_277:resection
+ID094_clinic_277:resection_m
+ID094_clinic_277:restaging
+ID094_clinic_277:slight progression of disease
+ID094_clinic_277:surgery
+ID094_clinic_277:surgery_m
+ID094_clinic_277:surgical resection
+ID094_clinic_277:tumor
+ID102_clinic_301:abdominal surgery
+ID102_clinic_301:adjunctive treatment
+ID102_clinic_301:anesthesia
+ID102_clinic_301:appendectomy
+ID102_clinic_301:chest x-ray
+ID102_clinic_301:colon cancer
+ID102_clinic_301:colonoscopy
+ID102_clinic_301:colonoscopy_m
+ID102_clinic_301:colorectal cancer
+ID102_clinic_301:colorectal surgery consultations
+ID102_clinic_301:ct
+ID102_clinic_301:ecg
+ID102_clinic_301:flexible sigmoidoscopy
+ID102_clinic_301:lab work
+ID102_clinic_301:laparoscopic surgery
+ID102_clinic_301:neoadjuvant treatment
+ID102_clinic_301:preoperative medical evaluation
+ID102_clinic_301:radiology
+ID102_clinic_301:rectal cancer
+ID102_clinic_301:surgical management
+ID102_clinic_301:tattooing
+ID103_clinic_304:cancer
+ID103_clinic_304:chemotherapy
+ID103_clinic_304:chemotherapy_m
+ID103_clinic_304:colonic polyposis
+ID103_clinic_304:colonoscopy
+ID103_clinic_304:colonoscopy_m
+ID103_clinic_304:creatinine level
+ID103_clinic_304:gemcitabine
+ID103_clinic_304:hemoglobin
+ID103_clinic_304:increased uptake
+ID103_clinic_304:increased uptake in the colon
+ID103_clinic_304:malignant tumor in the colon
+ID103_clinic_304:metastases
+ID103_clinic_304:metastatic urothelial cancer
+ID103_clinic_304:needle biopsy
+ID103_clinic_304:pet scan
+ID103_clinic_304:platelets
+ID103_clinic_304:polyp
+ID103_clinic_304:polyp_m
+ID103_clinic_304:potassium
+ID103_clinic_304:sodium
+ID103_clinic_304:stage of the disease
+ID103_clinic_304:thyroid cancer
+ID103_clinic_304:treatment
+ID103_clinic_304:treatment_m
+ID103_clinic_304:tumors
+ID103_clinic_304:urothelial cancer
+ID103_clinic_304:wbc
+ID103_clinic_304:whole-body ct-scan
+ID110_clinic_322:afib
+ID110_clinic_322:anesthesia
+ID110_clinic_322:blood work
+ID110_clinic_322:chest x-ray
+ID110_clinic_322:colon and rectal surgery
+ID110_clinic_322:ct abdomen and pelvis
+ID110_clinic_322:diabetes
+ID110_clinic_322:diagnosis
+ID110_clinic_322:ecg
+ID110_clinic_322:hypertension
+ID110_clinic_322:obesity
+ID110_clinic_322:obesity_m
+ID110_clinic_322:sigmoid colon cancer
+ID111_clinic_325:blood transfusion
+ID111_clinic_325:bowel prep
+ID111_clinic_325:brooke ileostomy
+ID111_clinic_325:chemotherapy
+ID111_clinic_325:chemotherapy_m
+ID111_clinic_325:ileal pouch-anal anastomosis
+ID111_clinic_325:laparoscopic proctocolectomy
+ID111_clinic_325:proctocolectomy
+ID111_clinic_325:proctocolectomy_m
+ID111_clinic_325:radiation
+ID118_clinic_345:bevacizumab_m
+ID118_clinic_345:chemotherapy
+ID118_clinic_345:chemotherapy_m
+ID118_clinic_345:ct scans
+ID118_clinic_345:folfox
+ID118_clinic_345:intrahepatic lesions
+ID118_clinic_345:iodine contrast
+ID118_clinic_345:kras mutated
+ID118_clinic_345:lesions
+ID118_clinic_345:liver ultrasound
+ID118_clinic_345:metastatic cecal cancer
+ID118_clinic_345:mri
+ID118_clinic_345:nonmalignant intrapulmonary nodules
+ID118_clinic_345:pet response
+ID118_clinic_345:pet scan
+ID118_clinic_345:postoperative chemotherapy
+ID118_clinic_345:regimen
+ID118_clinic_345:scans
+ID118_clinic_345:surgery
+ID118_clinic_345:surgery_m
+ID118_clinic_345:tumor marker
+ID119_clinic_348:cardiology evaluation
+ID119_clinic_348:chest discomfort
+ID119_clinic_348:colorectal surgery consultation
+ID119_clinic_348:ct-scan
+ID119_clinic_348:flexible sigmoidoscopy
+ID119_clinic_348:neoadjuvant chemoradiation therapy
+ID119_clinic_348:rectal adenocarcinoma
+ID126_clinic_369:anaesthesia
+ID126_clinic_369:defunctioning stoma
+ID126_clinic_369:dressing change
+ID126_clinic_369:flexible sigmoidoscopy
+ID126_clinic_369:loop colostomy
+ID127_clinic_372:alopecia
+ID127_clinic_372:anemia
+ID127_clinic_372:anemia_m
+ID127_clinic_372:cancer
+ID127_clinic_372:cancer recurrence
+ID127_clinic_372:chemotherapy_m
+ID127_clinic_372:colon cancer
+ID127_clinic_372:fatigue
+ID127_clinic_372:infection
+ID127_clinic_372:low blood counts
+ID127_clinic_372:lymph node status
+ID127_clinic_372:malignancy
+ID127_clinic_372:nausea
+ID127_clinic_372:neutropenia
+ID127_clinic_372:stomatitis
+ID127_clinic_372:vomiting
+ID127_clinic_372:vomiting_m
+ID134_clinic_393:anesthesia
+ID134_clinic_393:blood work
+ID134_clinic_393:chest x-ray
+ID134_clinic_393:colon and rectal surgery
+ID134_clinic_393:ct
+ID134_clinic_393:ecg
+ID134_clinic_393:hypertension
+ID134_clinic_393:immunohistochemical stain
+ID134_clinic_393:medical and radiation oncology
+ID134_clinic_393:rectal cancer
+ID134_clinic_393:rectal ultrasound
+ID135_clinic_396:bilateral ureteral stents
+ID135_clinic_396:disease
+ID135_clinic_396:intraoperative radiation therapy
+ID135_clinic_396:recurrent colorectal adenocarcinoma
+ID135_clinic_396:resection
+ID135_clinic_396:resection_m
+ID135_clinic_396:vaginal infiltration
+ID142_clinic_417:alopecia
+ID142_clinic_417:anemia
+ID142_clinic_417:anemia_m
+ID142_clinic_417:cancer
+ID142_clinic_417:cancer recurrence
+ID142_clinic_417:chemotherapy_m
+ID142_clinic_417:fatigue
+ID142_clinic_417:infection
+ID142_clinic_417:liver metastasis
+ID142_clinic_417:lymph node status
+ID142_clinic_417:malignancy
+ID142_clinic_417:nausea
+ID142_clinic_417:neutropenia
+ID142_clinic_417:rectosigmoid adenocarcinoma
+ID142_clinic_417:stomatitis
+ID142_clinic_417:treatment_m
+ID142_clinic_417:vomiting
+ID142_clinic_417:vomiting_m
+ID143_clinic_420:able to climb
+ID143_clinic_420:advanced disease
+ID143_clinic_420:biopsies
+ID143_clinic_420:chest pain
+ID143_clinic_420:chest radiograph
+ID143_clinic_420:colorectal surgery_m
+ID143_clinic_420:diagnosis
+ID143_clinic_420:functional status
+ID143_clinic_420:gene testing
+ID143_clinic_420:good functional status
+ID143_clinic_420:guillain-barre syndrome
+ID143_clinic_420:immunohistochemical stain
+ID143_clinic_420:laboratory studies
+ID143_clinic_420:pain
+ID143_clinic_420:pame
+ID143_clinic_420:pet ct-scan
+ID143_clinic_420:rectal cancer
+ID143_clinic_420:rectal endoscopic ultrasound
+ID143_clinic_420:rectal mass
+ID143_clinic_420:rectal pain
+ID143_clinic_420:shortness-of-breath
+ID150_clinic_441:actinic keratoses
+ID150_clinic_441:anesthesia
+ID150_clinic_441:cea
+ID150_clinic_441:chest x-ray
+ID150_clinic_441:colonoscopy
+ID150_clinic_441:colonoscopy_m
+ID150_clinic_441:colorectal surgery consultation
+ID150_clinic_441:ct
+ID150_clinic_441:dermatologic evaluation
+ID150_clinic_441:disease
+ID150_clinic_441:distal rectal cancer
+ID150_clinic_441:ecg
+ID150_clinic_441:egd
+ID150_clinic_441:endoscopy
+ID150_clinic_441:eus
+ID150_clinic_441:lab work
+ID150_clinic_441:medical evaluation
+ID150_clinic_441:medical oncology
+ID150_clinic_441:medications
+ID150_clinic_441:pathology reports
+ID150_clinic_441:radiation oncology
+ID150_clinic_441:rectal cancer
+ID150_clinic_441:reflux symptoms
+ID150_clinic_441:treatment
+ID150_clinic_441:treatment_m
+ID151_clinic_444:anesthesia
+ID151_clinic_444:blood work
+ID151_clinic_444:cardiology consultation
+ID151_clinic_444:chest x-ray
+ID151_clinic_444:colon and rectal surgery consultation
+ID151_clinic_444:colon cancer
+ID151_clinic_444:ct
+ID151_clinic_444:electrocardiogram
+ID151_clinic_444:heart catheterization
+ID151_clinic_444:tissue slides
+ID158_clinic_465:adjuvant chemotherapy
+ID158_clinic_465:anesthesia
+ID158_clinic_465:chest x-ray
+ID158_clinic_465:colonic stent
+ID158_clinic_465:colonoscopy
+ID158_clinic_465:colonoscopy_m
+ID158_clinic_465:disease
+ID158_clinic_465:duodenal polyps
+ID158_clinic_465:ecg
+ID158_clinic_465:egd
+ID158_clinic_465:fundic gland polyps
+ID158_clinic_465:immunohistochemistry staining
+ID158_clinic_465:lab work
+ID158_clinic_465:lynch syndrome_m
+ID158_clinic_465:medical evaluation
+ID158_clinic_465:neoadjuvant chemoradiation
+ID158_clinic_465:pathology
+ID158_clinic_465:pathology_m
+ID158_clinic_465:polyposis
+ID158_clinic_465:polyposis syndrome
+ID158_clinic_465:radiology reports
+ID158_clinic_465:rectosigmoid cancer
+ID158_clinic_465:stool softener
+ID158_clinic_465:tattoo
+ID158_clinic_465:therapy
+ID158_clinic_465:treatment
+ID158_clinic_465:treatment_m
+ID159_clinic_468:biopsy_m
+ID159_clinic_468:cardiology consultation
+ID159_clinic_468:chemotherapy
+ID159_clinic_468:chemotherapy_m
+ID159_clinic_468:coumadin
+ID159_clinic_468:ct
+ID159_clinic_468:ct reports
+ID159_clinic_468:ecg
+ID159_clinic_468:heparin management
+ID159_clinic_468:intra-operative radiation therapy
+ID159_clinic_468:medical evaluation
+ID159_clinic_468:pet reports
+ID159_clinic_468:pet scan
+ID159_clinic_468:radiation oncology
+ID159_clinic_468:rectal cancer
+ID159_clinic_468:recurrent/residual rectal cancer
+ID159_clinic_468:stomal therapy
+ID159_clinic_468:surgery
+ID159_clinic_468:surgery_m
+ID159_clinic_468:surgical resection
+ID159_clinic_468:surgically resectable
+ID166_clinic_486:adenocarcinoma
+ID166_clinic_486:colonoscopy report
+ID166_clinic_486:ct-scan
+ID166_clinic_486:ekg
+ID166_clinic_486:endorectal ultrasound
+ID166_clinic_486:pathology
+ID166_clinic_486:pathology_m
+ID166_clinic_486:rectal adenocarcinoma
+ID166_clinic_486:rectal cancer
+ID166_clinic_486:routine labs
+ID174_clinic_508:biopsies
+ID174_clinic_508:biopsy
+ID174_clinic_508:biopsy_m
+ID174_clinic_508:colon cancer
+ID174_clinic_508:colorectal cancer
+ID174_clinic_508:diagnostic colonoscopy
+ID174_clinic_508:dna mismatch repair
+ID174_clinic_508:gastroesophageal reflux disease
+ID174_clinic_508:ileorectostomy
+ID174_clinic_508:imaging
+ID174_clinic_508:immunostaining
+ID174_clinic_508:lynch syndrome
+ID174_clinic_508:lynch syndrome_m
+ID174_clinic_508:nonalcoholic fatty liver disease
+ID174_clinic_508:polyp
+ID174_clinic_508:polyp_m
+ID174_clinic_508:sedated flex sig
+ID174_clinic_508:treatment
+ID174_clinic_508:treatment_m
+ID174_clinic_508:tumor block
+ID174_clinic_508:upper endoscopy
+ID174_clinic_508:weight-loss and dietary measures
+ID175_clinic_511:colon cancer
+ID175_clinic_511:diabetes mellitus
+ID175_clinic_511:diagnostic studies
+ID175_clinic_511:dilantin
+ID175_clinic_511:dilantin level
+ID175_clinic_511:ecg
+ID175_clinic_511:hemoglobin a1c
+ID175_clinic_511:pet scan
+ID175_clinic_511:seizure disorder
+ID182_clinic_532:chest x-ray
+ID182_clinic_532:colonoscopy report
+ID182_clinic_532:ct
+ID182_clinic_532:laboratory work
+ID182_clinic_532:lesion
+ID182_clinic_532:neoadjuvant chemoradiation
+ID182_clinic_532:radiology reports
+ID182_clinic_532:rectal cancer
+ID182_clinic_532:surgical recommendations
+ID182_clinic_532:tattooed
+ID182_clinic_532:treatment
+ID182_clinic_532:treatment_m
+ID182_clinic_532:von willebrand disease
+ID183_clinic_534:anesthesia
+ID183_clinic_534:biopsies
+ID183_clinic_534:blood pressure
+ID183_clinic_534:cancer
+ID183_clinic_534:colonoscopy
+ID183_clinic_534:colonoscopy report
+ID183_clinic_534:colonoscopy_m
+ID183_clinic_534:colostomy
+ID183_clinic_534:colostomy_m
+ID183_clinic_534:ct report
+ID183_clinic_534:elevated blood pressure
+ID183_clinic_534:elevation
+ID183_clinic_534:endoscopic ultrasound
+ID183_clinic_534:hypertension clinic consultation
+ID183_clinic_534:immunohistochemistry staining
+ID183_clinic_534:lynch syndrome
+ID183_clinic_534:lynch syndrome_m
+ID183_clinic_534:nbi imaging
+ID183_clinic_534:neoplasia
+ID183_clinic_534:rectal cancer
+ID183_clinic_534:sedation
+ID183_clinic_534:stage the tumor
+ID183_clinic_534:surgical planning
+ID183_clinic_534:tattooing of the distal margin
+ID183_clinic_534:temporary ileostomy
+ID183_clinic_534:treatment_m
+ID190_clinic_553:bowel prep
+ID190_clinic_553:bright-red blood per rectum
+ID190_clinic_553:colon cancer
+ID190_clinic_553:colonoscopy
+ID190_clinic_553:colonoscopy_m
+ID190_clinic_553:ct-scan
+ID190_clinic_553:egd
+ID190_clinic_553:hemoglobin
+ID190_clinic_553:hyperglycemia
+ID190_clinic_553:intermittent red blood per rectum
+ID190_clinic_553:iron-deficiency
+ID190_clinic_553:iron-deficiency anemia
+ID190_clinic_553:left colonic lesion
+ID190_clinic_553:malabsorption
+ID190_clinic_553:sensation of fullness
+ID190_clinic_553:small-bowel biopsy
+ID190_clinic_553:small-bowel capsule
+ID190_clinic_553:tenderness and fullness in the left lower quadrant
+ID190_clinic_553:transfuse three units of blood
+ID190_clinic_553:transfusion
+ID191_clinic_556:cecal polyp
+ID191_clinic_556:colon cancer
+ID191_clinic_556:colostomy
+ID191_clinic_556:colostomy_m
+ID191_clinic_556:ct-scan
+ID191_clinic_556:endoscopic description
+ID191_clinic_556:kidney transplantation
+ID191_clinic_556:open operation
+ID191_clinic_556:pathology
+ID191_clinic_556:pathology_m
+ID191_clinic_556:segmental colectomy
+ID191_clinic_556:sigmoid cancer
+ID191_clinic_556:surgery
+ID191_clinic_556:surgery_m
+ID198_clinic_582:chemotherapy
+ID198_clinic_582:chemotherapy_m
+ID198_clinic_582:colonoscopy
+ID198_clinic_582:colonoscopy_m
+ID198_clinic_582:ct-scan
+ID198_clinic_582:endorectal ultrasound
+ID198_clinic_582:immunohistochemistry
+ID198_clinic_582:lynch syndrome
+ID198_clinic_582:lynch syndrome_m
+ID198_clinic_582:msi testing
+ID198_clinic_582:neoadjuvant
+ID198_clinic_582:radiation
+ID198_clinic_582:rectal cancer
+ID198_clinic_582:tattoo
+ID199_clinic_585:adenocarcinoma
+ID199_clinic_585:chest x-ray
+ID199_clinic_585:ct-scan
+ID199_clinic_585:endoscopic removal
+ID199_clinic_585:flexible sigmoidoscopy
+ID199_clinic_585:intramucosal adenocarcinoma
+ID199_clinic_585:intramucosal adenocarcinoma of the rectum
+ID199_clinic_585:lesion
+ID199_clinic_585:mass lesion
+ID199_clinic_585:metastatic disease
+ID199_clinic_585:transrectal ultrasound
+ID206_clinic_600:5-fu
+ID206_clinic_600:asymptomatic
+ID206_clinic_600:avastin
+ID206_clinic_600:cancer
+ID206_clinic_600:capecitabine_m
+ID206_clinic_600:chemotherapy
+ID206_clinic_600:chemotherapy_m
+ID206_clinic_600:cyberknife radiation
+ID206_clinic_600:diagnosis
+ID206_clinic_600:disease
+ID206_clinic_600:disease control
+ID206_clinic_600:disease reevaluation
+ID206_clinic_600:folfiri
+ID206_clinic_600:folfox
+ID206_clinic_600:leucovorin
+ID206_clinic_600:maintenance chemotherapy
+ID206_clinic_600:metastatic rectal cancer
+ID206_clinic_600:radiation
+ID206_clinic_600:recurrent metastatic rectal cancer
+ID206_clinic_600:regimen
+ID206_clinic_600:surgical excision
+ID206_clinic_600:tumor-directed therapy
+ID206_clinic_600:tumor-directed treatment
+ID207_clinic_603:anesthesia
+ID207_clinic_603:blood work
+ID207_clinic_603:chest x-ray
+ID207_clinic_603:colon cancer
+ID207_clinic_603:ecg
+ID214_clinic_623:bowel preparation
+ID214_clinic_623:colonoscopy
+ID214_clinic_623:colonoscopy_m
+ID214_clinic_623:ct report
+ID214_clinic_623:depression
+ID214_clinic_623:endoscopic rectal ultrasound
+ID214_clinic_623:mucocele of appendix
+ID214_clinic_623:neoadjuvant chemoradiation therapy
+ID214_clinic_623:pathology slides
+ID214_clinic_623:rectal carcinoma
+ID214_clinic_623:rectal ultrasound
+ID214_clinic_623:stage t1
+ID214_clinic_623:surgical options
+ID215_clinic_626:adenocarcinoma
+ID215_clinic_626:barrett's esophagus
+ID215_clinic_626:biopsies
+ID215_clinic_626:chemotherapy
+ID215_clinic_626:chemotherapy_m
+ID215_clinic_626:colonoscopy
+ID215_clinic_626:colonoscopy_m
+ID215_clinic_626:dysplastic
+ID215_clinic_626:egd
+ID215_clinic_626:general anesthesia
+ID215_clinic_626:laparoscopic surgery
+ID215_clinic_626:lesions
+ID215_clinic_626:mass lesion
+ID215_clinic_626:monitoring
+ID215_clinic_626:omeprazole 20-mg
+ID215_clinic_626:pet scan
+ID215_clinic_626:proton-pump inhibitor therapy
+ID215_clinic_626:tumor staging

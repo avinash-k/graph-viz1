@@ -12,17 +12,27 @@ function selectableForceDirectedGraph() {
     var yScale = d3.scale.linear()
     .domain([0,height]).range([0, height]);
 
-    //clear existing svg 
-    $('svg').remove();
-    
+    //clear existing svg , except first graph
+    if(window.fromNodeClick){
+    $('svg').not('svg:first').remove();
+    }else{
+        $('svg').remove();
+    }
     var pointsJson = "graph.json";
     var fileList = [];
     d3.text('ccToEventsExcelSheet.tsv',function(data){
         //console.log(data)
         //fileList = data.split("\n");
         data.split("\n").forEach(function(d){
-            if(d.length!=0)
-                fileList.push(d.trim());
+            if(d.length!=0){
+                filename = d.trim();
+                fileList.push(filename);
+                $('#fileDropDown')
+                    .append($("<option></option>")
+                                .attr("value",filename)
+                                .text(filename)); 
+                }
+
         });
         console.log("FileList : " + fileList.length);
         //console.log(fileList[0]);
@@ -37,17 +47,44 @@ function selectableForceDirectedGraph() {
             window.points = graph.nodes;
             console.log("Number of points : " + points.length);
 
+            //if there is nameArray, we update fileList to sort
+            if(window.nameArray != null && window.nameArray.length > 0){
+                fileList = [];
+                window.nameArray.forEach(function(e){
+                    $.merge(fileList,window.fileListMap[e]);
+                });
+                fileList = $.unique(fileList);
+            }else if( window.nodeName.value != null && window.nodeName.value != ""){
+                fileList = [];
+                $.merge(fileList,window.fileListMap[window.nodeName.value]);
+                fileList = $.unique(fileList);
+            }
+
             //iterate on d3.selectAll('.cell')[0].length
             for (i = 1; i <= window.graphCount; i++) {
                 var id = 'cell_' + i;
                 //var inputJson = "graph.json";
                 var inputJson = "json/" + fileList[i-1];
+                if(i == 1 && window.selectedFileName != null){
+                    inputJson = "json/" + window.selectedFileName;
+                }
+                if(i>1 && window.selectedFileName == fileList[i-1]){
+                    $('#cell_'+1).prop('title',inputJson.split('/')[1]);
+                    $('#cell_'+i).remove();
+                    window.graphCount = parseInt(window.graphCount)+1;
+                    continue;
+                }
+                if(i == 1 && window.fromNodeClick){
+                    window.fromNodeClick = false;
+                    continue;
+                }
+                
                 console.log(id);
                 if($("#" + id).length == 0 ){
                     if(i % 4 != 0)
-                        $('.graph-container').append('<div class="cell" id="cell_'+i+'"></div>');
+                        $('.graph-container').append('<div class="cell" id="cell_'+i+'" title="' +inputJson.split('/')[1] + '"></div>');
                     else
-                        $('.graph-container').append('<div class="cell" id="cell_'+i+'"></div>'+'<br/>');    
+                        $('.graph-container').append('<div class="cell" id="cell_'+i+'" title="' +inputJson.split('/')[1] + '"></div>'+'<br/>');    
                 }
                 //var id = d3.selectAll('.cell')[0][i].id;
                 
@@ -284,19 +321,24 @@ function selectableForceDirectedGraph() {
                     //if the shift key isn't down, unselect everything
                     node.classed("selected", function(p) { return p.selected =  p.previouslySelected = false; })
                 }
-                window.nameArray.push(d.name);
+                
                 var selector = "";
-                nameArray.forEach(function(){
-
-                });
                 var similarNodes = $('svg').find('[data-name="' + d.name + '"]');
                 for(var i = 0 ; i < similarNodes.length;i++){
                     $(similarNodes[i]).addClass("selected");
                 }
                 // always select this node
                 d3.select(this).classed("selected", d.selected = !d.previouslySelected);
-                
+                if(d.selected = true){
+                   window.nameArray.push(d.name);
+                }else{
+                    window.nameArray = jQuery.grep(window.nameArray, function(value) {
+                                            return value != d.name;
+                                            });
+                }
                 showProperties(d,!shiftKey);
+                window.fromNodeClick = true;
+                selectableForceDirectedGraph();
 
             })
 

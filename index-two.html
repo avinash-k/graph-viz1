@@ -23,8 +23,8 @@
 }
 
 .cell {
-	width: 200px;
-    height: 200px;
+	width: 450px;
+    height: 500px;
     overflow: hidden;
     display: table-cell;
     padding: 20px;
@@ -76,8 +76,12 @@ div.tooltip {
 <body>
     <p>
     <label>Number of Graphs: </label>
-    <input type="number" value="4" id="graphCount" min="1" max="100" step="1"/>
+    <input type="number" value="2" id="graphCount" min="1" max="100" step="1"/>
     <input type="text" id="nodeName" placeholder="Entity Name"/>
+     <label>Select File 1: </label>
+    <select id="fileDropDown1" name="inputFile1"><option></option></select>
+     <label>Select File 2: </label>
+    <select id="fileDropDown2" name="inputFile2"><option></option></select>
     <button type="button" id="gobtn">Go</button>
     </p>
     <div class="main-container">
@@ -96,10 +100,10 @@ div.tooltip {
     <div class='cell' align='center' id="d3_selectable_force_directed_graph_2"></div> -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="plot.js"></script>
+<script src="plot2.js"></script>
 <script type="text/javascript">
 	//add click event listener, for go button
-    window.graphCount = 4;
+    window.graphCount = 2;
     window.nodeCallback = function(){
       var similarNodes = $('svg').find('[data-name="' + window.nodeName + '"]');
       for(var i = 0 ; i < similarNodes.length;i++){
@@ -111,9 +115,13 @@ div.tooltip {
 
         var graphCount = document.getElementById("graphCount").value;
         var nodeName = document.getElementById("nodeName").value;
+        var selectedFileName1 = document.getElementById("fileDropDown1").value;
+        var selectedFileName2 = document.getElementById("fileDropDown2").value;
         //alert( graphCount );
         window.graphCount = graphCount;
         window.nodeName = nodeName;
+        window.selectedFileName1 = selectedFileName1;
+        window.selectedFileName2 = selectedFileName2;
         selectableForceDirectedGraph();
     }, false);
 </script>

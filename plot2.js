@@ -1,6 +1,6 @@
 function selectableForceDirectedGraph() {
-    var width = 200,
-    height = 200,
+    var width = 450,
+    height = 500,
     shiftKey, ctrlKey;
     var div = d3.select("body").append("div")	
     .attr("class", "tooltip")				
@@ -21,8 +21,18 @@ function selectableForceDirectedGraph() {
         //console.log(data)
         //fileList = data.split("\n");
         data.split("\n").forEach(function(d){
-            if(d.length!=0)
-                fileList.push(d.trim());
+            if(d.length!=0){
+                filename = d.trim();
+                fileList.push(filename);
+                $('#fileDropDown1')
+                    .append($("<option></option>")
+                                .attr("value",filename)
+                                .text(filename)); 
+                $('#fileDropDown2')
+                    .append($("<option></option>")
+                                .attr("value",filename)
+                                .text(filename)); 
+            }
         });
         console.log("FileList : " + fileList.length);
         //console.log(fileList[0]);
@@ -42,12 +52,20 @@ function selectableForceDirectedGraph() {
                 var id = 'cell_' + i;
                 //var inputJson = "graph.json";
                 var inputJson = "json/" + fileList[i-1];
+                if(i == 1 && window.selectedFileName1 != null){
+                    inputJson = "json/" + window.selectedFileName1;
+                    $('#cell_'+1).prop('title',inputJson.split('/')[1]);
+                }
+                if(i == 2 && window.selectedFileName2 != null){
+                    inputJson = "json/" + window.selectedFileName2;
+                    $('#cell_'+2).prop('title',inputJson.split('/')[1]);
+                }
                 console.log(id);
                 if($("#" + id).length == 0 ){
                     if(i % 4 != 0)
-                        $('.graph-container').append('<div class="cell" id="cell_'+i+'"></div>');
+                        $('.graph-container').append('<div class="cell" id="cell_'+i+'" title="' +inputJson.split('/')[1] + '"></div>');
                     else
-                        $('.graph-container').append('<div class="cell" id="cell_'+i+'"></div>'+'<br/>');    
+                        $('.graph-container').append('<div class="cell" id="cell_'+i+'" title="' +inputJson.split('/')[1] + '"></div>'+'<br/>');    
                 }
                 //var id = d3.selectAll('.cell')[0][i].id;
                 

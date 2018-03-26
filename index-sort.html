@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<head><title>Dataset Visualization</title></head>
+<head><title>Sort based Visualization</title></head>
 <style>
 
 .node {
@@ -78,6 +78,9 @@ div.tooltip {
     <label>Number of Graphs: </label>
     <input type="number" value="4" id="graphCount" min="1" max="100" step="1"/>
     <input type="text" id="nodeName" placeholder="Entity Name"/>
+    <label>Select Initial File: </label>
+    <select id="fileDropDown" name="inputFile">
+    </select>
     <button type="button" id="gobtn">Go</button>
     </p>
     <div class="main-container">
@@ -96,7 +99,7 @@ div.tooltip {
     <div class='cell' align='center' id="d3_selectable_force_directed_graph_2"></div> -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="plot.js"></script>
+<script src="plot-sort.js"></script>
 <script type="text/javascript">
 	//add click event listener, for go button
     window.graphCount = 4;
@@ -106,14 +109,45 @@ div.tooltip {
           $(similarNodes[i]).addClass("selected");
       }
     };
+    window.nameArrayCallback = function(){
+      for(var i = 0; i < window.nameArray.length ; i++){
+        var similarNodes = $('svg').find('[data-name="' + window.nameArray[i] + '"]');
+        for(var j = 0 ; j < similarNodes.length;j++){
+            $(similarNodes[j]).addClass("selected");
+        }
+      }
+    };
     window.nameArray = [];
+    window.fileListMap = {};
+    //total files entities map
+    d3.text('entities_files.uniq',function(data){
+        data.split("\n").forEach(function(d){
+          if(d.length!=0){
+              filename_entity = d.trim().split(':');
+              if(filename_entity[1] in window.fileListMap){
+                window.fileListMap[filename_entity[1]].push(filename_entity[0]);
+              }else{
+                window.fileListMap[filename_entity[1]] = [];
+                window.fileListMap[filename_entity[1]].push(filename_entity[0]);
+              }
+              
+              console.log(filename_entity);
+              }
+
+      });
+    });
+    
     document.getElementById("gobtn").addEventListener("click", function() {
 
         var graphCount = document.getElementById("graphCount").value;
         var nodeName = document.getElementById("nodeName").value;
+        var selectedFileName = document.getElementById("fileDropDown").value;
         //alert( graphCount );
         window.graphCount = graphCount;
         window.nodeName = nodeName;
+        window.selectedFileName = selectedFileName;
+        window.fromNodeClick = false;
+        $('.cell').remove();
         selectableForceDirectedGraph();
     }, false);
 </script>
